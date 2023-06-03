@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Somos una Empresa lider en la venta de musica en formato fisico.La mejor fidelidad y mejor calidad de audio se puede en contrar en nuestra tienda. Esta pagina es la tienda online de discos musicales con la mejor calidad de audio y los mejores precios del 
+  mercado.">
+  <meta name="keywords" content="musica,discos,CD">
+  <meta name="author" content="Guns'n tracks Team">
+  <meta name="publisher" content="Guns'n tracks Company">
+	<title>Guns'n Tracks</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="catalogologed.js"></script>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+           // carritoinit();
+        }
+    </script> 
+
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" title="Guns'n tracks">
+      <img src="images/logo.jpg" width="174" height="150" alt="Gunsntracks" title="logo">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   	 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="indexlogin.html" title="Inicio">Inicio</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" title="todos los productos">Todos los productos</a>
+        </li>
+               <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Fany Coufain
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
+            <li><a class="dropdown-item" href="listadeseos.html">Lista de deseos</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="index.html">Cerrar sesión </a></li>
+          </ul>
+        </li>   
+      </ul>
+    </div>
+  </div>
+    <a class="navbar-brand" href="carrito.html" title="carrito de compras">
+      <img src="images/carrito.png" width="30" height="24" alt="carrito" title="carrito">
+    </a>
+</nav>
+
+<div class="container">
+	<div class="row justify-content-md-center">
+		<div style="width:95%; padding: 10px;" >
+          <script src="https://www.paypal.com/sdk/js?client-id=AfYMnYzynLcIjbcTaJpvwwQx9RcO7lw9-E8ZeqpE9F4HISNsH2F5pJP14NWRlKeGvNdNZrpJAAerypid&currency=USD"></script>
+    <!-- Set up a container element for the button -->
+    <div id="paypal-button-container"></div>
+    <script>
+      paypal.Buttons({
+        // Order is created on the server and the order id is returned
+        createOrder: function(data,actions) {
+        
+          return actions.order.create({
+            purchase_units:[{
+              amount:{
+                value: '299.99'
+              }
+            }]
+          })
+
+       }   
+      }).render('#paypal-button-container');
+    </script>
+    </div>
+</div>
+</div>
+<footer>
+<ul class="nav justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link" href="about.html" title="about" target="_blank">Acerca de nosotros</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="legals.html" title="legals" target="_blank">Aviso legal</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="https://www.facebook.com/people/Guns-N-Tracks/100090367312338/" 
+     title="Guns'n tracks facebook" target="_blank">Facebook</a>
+  </li>
+</ul>
+<p class="text-center">© 2023 - Software Ecommerce desarrollado por Equipo Guns'n Tracks™</p>
+</footer>		
+</div>
+</body>
+
+<script type="text/javascript">
+
+</script>
+</html>
